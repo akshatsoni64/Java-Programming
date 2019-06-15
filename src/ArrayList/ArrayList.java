@@ -1,18 +1,18 @@
 import java.util.*;
 
-class ArrayList
+class ArrayListDemo
 {
 	public static void main(String args[])
 	{
-		ArrayList<String> c=new ArrayList<String>();
-		c.add("A");
-		c.add("C");
-		c.add("D");
-		
-		int index=c.indexOf("C");
-		
+		ArrayList<Integer> c=new ArrayList<Integer>();
+		c.add(1);
+		c.add(2);
+		c.add(3);
+
+		int index=c.indexOf(2);
+
 		System.out.println(c+" "+index);
-		c.add(index,"B");
+		c.add(index,4);
 		System.out.println(c);
 	}
 }
