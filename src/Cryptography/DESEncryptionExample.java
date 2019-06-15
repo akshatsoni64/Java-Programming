@@ -1,25 +1,15 @@
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+import javax.crypto.*;
+import javax.crypto.spec.IvParameterSpec;
+import java.io.*;
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.security.spec.AlgorithmParameterSpec;
 
-import javax.crypto.Cipher;
-import javax.crypto.CipherInputStream;
-import javax.crypto.CipherOutputStream;
-import javax.crypto.KeyGenerator;
-import javax.crypto.NoSuchPaddingException;
-import javax.crypto.SecretKey;
-import javax.crypto.spec.IvParameterSpec;
-
 public class DESEncryptionExample {
+    private static final byte[] iv = {11, 22, 33, 44, 99, 88, 77, 66};
     private static Cipher encryptCipher;
     private static Cipher decryptCipher;
-    private static final byte[] iv = { 11, 22, 33, 44, 99, 88, 77, 66 };
 
     public static void main(String[] args) {
         String clearTextFile = "files/source.txt";

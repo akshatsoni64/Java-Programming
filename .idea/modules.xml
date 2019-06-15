@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/src/ASS3/ASS3.iml" filepath="$PROJECT_DIR$/src/ASS3/ASS3.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/Loop/DoWhileLoop/DoWhileLoop.iml" filepath="$PROJECT_DIR$/src/Loop/DoWhileLoop/DoWhileLoop.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/Exception/Exception.iml" filepath="$PROJECT_DIR$/src/Exception/Exception.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/FILES/FILES.iml" filepath="$PROJECT_DIR$/src/FILES/FILES.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/Loop/ForLoop/ForLoop.iml" filepath="$PROJECT_DIR$/src/Loop/ForLoop/ForLoop.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/SIMPLE/Function/Function.iml" filepath="$PROJECT_DIR$/src/SIMPLE/Function/Function.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/INHERITANCE/INHERITANCE.iml" filepath="$PROJECT_DIR$/src/INHERITANCE/INHERITANCE.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/JDBC/JDBC.iml" filepath="$PROJECT_DIR$/src/JDBC/JDBC.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/Java-Programming.iml" filepath="$PROJECT_DIR$/src/Java-Programming.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Java-Programming1.iml" filepath="$PROJECT_DIR$/Java-Programming1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/NEW/NEW.iml" filepath="$PROJECT_DIR$/src/NEW/NEW.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/SIMPLE/SIMPLE.iml" filepath="$PROJECT_DIR$/src/SIMPLE/SIMPLE.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/SWAPPING/SWAPPING.iml" filepath="$PROJECT_DIR$/src/SWAPPING/SWAPPING.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/THIS/THIS.iml" filepath="$PROJECT_DIR$/src/THIS/THIS.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/THREAD/THREAD.iml" filepath="$PROJECT_DIR$/src/THREAD/THREAD.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/Loop/WhileLoop/WhileLoop.iml" filepath="$PROJECT_DIR$/src/Loop/WhileLoop/WhileLoop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java-Programming/Java-Programming.iml" filepath="$PROJECT_DIR$/Java-Programming/Java-Programming.iml" />
     </modules>
   </component>
 </project>

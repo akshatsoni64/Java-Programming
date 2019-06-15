@@ -1,13 +1,25 @@
 package Algorithm;
 
 class BinarySearch {
+    // Driver method to test above
+    public static void main(String[] args) {
+        BinarySearch ob = new BinarySearch();
+        int[] arr = {2, 3, 4, 10, 40, 11, 6, 7};
+        int n = arr.length;
+        int x = 7;
+        int result = ob.binarySearch(arr, 0, n - 1, x);
+        if (result == -1)
+            System.out.println("Element not present");
+        else
+            System.out.println("Element found at index " + result);
+    }
+
     // Returns index of x if it is present in arr[l..
     // r], else return -1
-    int binarySearch(int arr[], int l, int r, int x)
-    {
+    int binarySearch(int[] arr, int l, int r, int x) {
         if (r >= l) {
             int mid = l + (r - l) / 2;
-            System.out.println("Mid: "+mid);
+            System.out.println("Mid: " + mid);
             // If the element is present at the
             // middle itself
             if (arr[mid] == x)
@@ -26,19 +38,5 @@ class BinarySearch {
         // We reach here when element is not present
         // in array
         return -1;
-    }
-
-    // Driver method to test above
-    public static void main(String args[])
-    {
-        BinarySearch ob = new BinarySearch();
-        int arr[] = { 2, 3, 4, 10, 40, 11, 6, 7 };
-        int n = arr.length;
-        int x = 7;
-        int result = ob.binarySearch(arr, 0, n - 1, x);
-        if (result == -1)
-            System.out.println("Element not present");
-        else
-            System.out.println("Element found at index " + result);
     }
 }

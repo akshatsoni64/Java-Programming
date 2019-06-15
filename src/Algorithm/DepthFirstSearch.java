@@ -1,49 +1,20 @@
 package Algorithm;
 
-import java.io.*;
-import java.util.*;
+import java.util.Iterator;
+import java.util.LinkedList;
 
-class DepthFirstSearch
-{
+class DepthFirstSearch {
     private int V;
-    private LinkedList<Integer> adj[];
+    private LinkedList<Integer>[] adj;
 
-    DepthFirstSearch(int v)
-    {
+    DepthFirstSearch(int v) {
         V = v;
         adj = new LinkedList[v];
-        for (int i=0; i<v; ++i)
+        for (int i = 0; i < v; ++i)
             adj[i] = new LinkedList();
     }
 
-    void addEdge(int v, int w)
-    {
-        adj[v].add(w);
-    }
-
-    void DFSUtil(int v,boolean visited[])
-    {
-        visited[v] = true;
-        System.out.print(v+" ");
-
-        Iterator<Integer> i = adj[v].listIterator();
-        while (i.hasNext())
-        {
-            int n = i.next();
-            if (!visited[n])
-                DFSUtil(n, visited);
-        }
-    }
-
-    void DFS(int v)
-    {
-        boolean visited[] = new boolean[V];
-
-        DFSUtil(v, visited);
-    }
-
-    public static void main(String args[])
-    {
+    public static void main(String[] args) {
         DepthFirstSearch g = new DepthFirstSearch(4);
 
         g.addEdge(0, 1);
@@ -53,9 +24,31 @@ class DepthFirstSearch
         g.addEdge(2, 3);
         g.addEdge(3, 3);
 
-        System.out.println("Following is Depth First Traversal "+
+        System.out.println("Following is Depth First Traversal " +
                 "(starting from vertex 2)");
 
         g.DFS(2);
+    }
+
+    void addEdge(int v, int w) {
+        adj[v].add(w);
+    }
+
+    void DFSUtil(int v, boolean[] visited) {
+        visited[v] = true;
+        System.out.print(v + " ");
+
+        Iterator<Integer> i = adj[v].listIterator();
+        while (i.hasNext()) {
+            int n = i.next();
+            if (!visited[n])
+                DFSUtil(n, visited);
+        }
+    }
+
+    void DFS(int v) {
+        boolean[] visited = new boolean[V];
+
+        DFSUtil(v, visited);
     }
 }
