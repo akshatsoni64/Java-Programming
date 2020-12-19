@@ -97,5 +97,3 @@ public class Main
 			System.out.print(arr[i]+" ");
 	}
 }
-
-// Code Contributed by Mohit Gupta_OMG
